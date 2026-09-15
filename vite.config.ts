@@ -15,6 +15,10 @@ export default defineConfig({
     resolve: {
       alias: [
         {
+          find: /^tslib\/modules\/index\.js$/,
+          replacement: "tslib/tslib.js",
+        },
+        {
           find: /^tslib$/,
           replacement: "tslib/tslib.js",
         },
